@@ -86,12 +86,76 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* ---------- Base Header-Footer Styles------*/
+/* General Styles */
+
+html {
+font-size: 1rem;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+text-align: left;
+}
+
+ul, ol {
+list-style-type: none;
+}
+
+a {
+color: #e2e3ed;
+text-decoration: none;
+font-size: 1.125em;
+font-weight: 500;
+font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+font-size: 2.25em;
+line-height: 2.6875;
+font-weight: 500;
+font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+
+h2 {
+font-family: 'Poppins', sans-serif;
+font-size: 1.875em;
+font-weight: 500;
+}
+
+h3, h4 {
+font-family: 'Poppins', sans-serif;
+font-size: 1.125em;
+font-weight: 500;
+}
+
+p {
+font-size: 0.875em;
+line-height: 1.285;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+
+}
 
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
+
 }
+   /* ---------- Base Header-Footer Styles------*/
+
+
 
 header {
   display: flex;
@@ -123,6 +187,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  font-size: 1.125em;
+  font-weight: bold;
 
 }
 
@@ -154,6 +220,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3125
 
 }
 
@@ -205,14 +272,16 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  line-height: 30px;
 }
 
 .reviews h2 {
-
+margin-bottom: 40px;
 }
 
 .reviews h3 {
   width: 55%;
+  margin: 20px 0;
 }
 
 /*------About Page--------*/
@@ -247,6 +316,7 @@ margin: 50px 0 0 0;
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .faq-content {
@@ -366,6 +436,21 @@ footer .social-icons p {
 @media only screen and (min-width: 768px) {
   /* Tablet Styles Here */
   /* General Styles */
+
+  h1 {
+    font-size: 3em;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -421,7 +506,7 @@ width: 20%
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
  }
 .reviews article {
   display: flex;
@@ -437,6 +522,14 @@ footer .content-wrapper {
   width: 65%;
 }
 
+footer h4 {
+  font-size: 1.5em;
+}
+
+footer p {
+  line-height: 18px;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -447,8 +540,54 @@ footer .contact {
   margin-bottom: 0;
 }
 
+footer .contact h4 {
+  font-size: 1.5em;
+}
+
 footer .copyright {
-  100%;
+  width: 100%;
+}
+
+/*FAQ Page */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+.faq h4, .faq p {
+  font-size: 0.875;
+  line-height: 15.75;
+}
+
+/* About Page */
+ 
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.content-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 }
@@ -456,6 +595,22 @@ footer .copyright {
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here*/
 
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3, h4 {
+    font-size: 1.875;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 24px;
+  }
   header {
     padding: 15px 0;
   }
@@ -499,6 +654,10 @@ width: 80%;
 
   /* About Page */
 
+  .mission h2 {
+    font-size: 3em;
+  }
+
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
@@ -508,6 +667,7 @@ width: 80%;
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
 
